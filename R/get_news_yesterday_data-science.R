@@ -1,5 +1,5 @@
 library(httr2)
-library(RJSONIO)
+library(jsonlite)
 
 yesterday <- Sys.Date() - 1
 
