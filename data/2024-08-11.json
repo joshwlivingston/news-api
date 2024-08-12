@@ -1,0 +1,9 @@
+{
+ "url": "https://newsapi.org/v2/everything?q=%60%22data%20science%22%60&from=2024-08-11&pageSize=10&apiKey=97bf3ee7ce33409d8422ab74d20b0eb6",
+"method": null,
+"headers": [],
+"body": null,
+"fields": [],
+"options": [],
+"policies": [] 
+}
