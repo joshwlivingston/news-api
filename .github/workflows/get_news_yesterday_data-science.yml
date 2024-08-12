@@ -26,8 +26,9 @@ jobs:
 
       # Render the rmarkdown file into rmd/
       - name: Render Rmarkdown
-        shell: Rscript {0}
-        run: source("R/get_news_yesterday_data-science.R")
+        run: Rscript R/get_news_yesterday_data-science.R
+        env:
+          NEWS_API_KEY: ${{ secrets.NEWS_API_KEY}}
 
       # Automatically commit results
       - uses: stefanzweifel/git-auto-commit-action@v5
