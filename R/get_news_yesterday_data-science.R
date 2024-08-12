@@ -14,4 +14,4 @@ req <- request("https://newsapi.org/v2/everything") |>
 resp <- req_perform(req)
 resp_json <- resp_body_json(resp)
 
-write(req_json, paste0("data/", yesterday, ".json"))
+write(resp_json, paste0("data/", yesterday, ".json"))
