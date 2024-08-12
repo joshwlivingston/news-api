@@ -11,6 +11,7 @@ req <- request("https://newsapi.org/v2/everything") |>
     apiKey = Sys.getenv("NEWS_API_KEY")
   )
 
-req_json <- toJSON(req)
+resp <- req_perform(req)
+resp_json <- resp_body_json(resp)
 
 write(req_json, paste0("data/", yesterday, ".json"))
